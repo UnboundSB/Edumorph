@@ -1,12 +1,18 @@
-# React + Vite
+# GDG-Overburdened-teachers-solution
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Problem statements
+- Manual grading and feedback processes
+- Heavy workload in managing classes
+- High teacher to student ratio
+- Lack of personalized guidance
 
-Currently, two official plugins are available:
+## Suggested solutions
+-  integrating technology to assist with administrative tasks
+-  UN Sustainable Development Goal 4 (Quality Education), the solution should focus on inclusivity, equity, and lifelong learning opportunities.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Project solution objectives
+1. Automatic grading and feedback: google len: Google Classroom API(equity)
+2. Google Docs API:Facilitates the creation and management of documents, enabling the AI assistant to generate and insert personalized feedback directly into student assignments.
+3. Google Sheets API:Allows for the organization and analysis of student performance data, supporting the AI assistant in tracking progress and identifying areas for improvement.
+4. Google Translate API:Provides translation services to support multilingual feedback, ensuring inclusivity for students from diverse linguistic backgrounds.(inclusivity)
+5. NotebookLM: Note taking and summarizing.
