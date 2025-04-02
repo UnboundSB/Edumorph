@@ -1,0 +1,14 @@
+#root {
+  background:radial-gradient(#1f2b3e, 1f2b3a);
+}
+
+header{
+  background-color:#0F1C2E;
+  padding-top: 0%;
+  width:100%;
+
+}
+.title{
+  width:100%;
+  padding:0;
+}

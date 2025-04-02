@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/index.css">
+    <title>Edumorph - Teacher's AI Assistant</title>
+   
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <div class="logo-icon">
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="logo-text">Edumorph</div>
+        </div>
+
+        <div class="profile-card">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Profile" class="profile-pic">
+            <div>
+                <div class="profile-name">Dr. Sarah Johnson</div>
+                <div class="profile-title">Professor</div>
+            </div>
+        </div>
+
+        <div class="nav-menu">
+            <div class="nav-item active">
+                <div class="nav-icon"><i class="fas fa-tachometer-alt"></i></div>
+                <div>Dashboard</div>
+            </div>
+            <div class="nav-item">
+                <div class="nav-icon"><i class="fas fa-users"></i></div>
+                <div>Classes</div>
+            </div>
+            <div class="nav-item">
+                <div class="nav-icon"><i class="fas fa-tasks"></i></div>
+                <div>Assignments</div>
+                <div class="nav-badge">12</div>
+            </div>
+            <div class="nav-item">
+                <div class="nav-icon"><i class="fas fa-graduation-cap"></i></div>
+                <div>Students</div>
+            </div>
+            <div class="nav-item">
+                <div class="nav-icon"><i class="fas fa-chart-line"></i></div>
+                <div>Analytics</div>
+            </div>
+            <div class="nav-item">
+                <div class="nav-icon"><i class="fas fa-robot"></i></div>
+                <div>AI Assistant</div>
+            </div>
+            <div class="nav-item">
+                <div class="nav-icon"><i class="fas fa-cog"></i></div>
+                <div>Settings</div>
+            </div>
+        </div>
+
+        <div class="upgrade-card glow">
+            <div class="upgrade-title">Upgrade to Pro</div>
+            <div class="upgrade-desc">Unlock advanced analytics and AI features for personalized education</div>
+            <button class="upgrade-btn">Upgrade Now</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Top Navigation -->
+        <div class="top-header">
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="mobile-logo">Edumorph</div>
+            
+            <div class="search-bar">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" placeholder="Search classes, assignments..." class="search-input">
+            </div>
+
+            <div class="header-icons">
+                <button class="icon-btn">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-badge"></span>
+                </button>
+                <button class="icon-btn">
+                    <i class="fas fa-envelope"></i>
+                    <span class="notification-badge"></span>
+                </button>
+                <div class="desktop-profile">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Profile" class="profile-pic-sm">
+                    <div class="profile-name-sm">Dr. Johnson</div>
+                </div>
+                <div class="mobile-profile">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Profile" class="profile-pic-sm">
+                </div>
+            </div>
+        </div>
+
+        <!-- Dashboard Content -->
+        <div class="dashboard-content">
+            <div class="welcome-section">
+                <h1>Welcome back, Dr. Johnson</h1>
+                <p>Here's what's happening with your classes today</p>
+            </div>
+
+            <!-- Stats Cards -->
+            <div class="stats-grid">
+                <div class="stats-card animate-fade-in glow">
+                    <div class="stats-header">
+                        <div>
+                            <div class="stats-title">Active Classes</div>
+                            <div class="stats-value">5</div>
+                        </div>
+                        <div class="stats-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-info">
+                            <span>Total students</span>
+                            <span>142</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stats-card animate-fade-in delay-1 glow">
+                    <div class="stats-header">
+                        <div>
+                            <div class="stats-title">Pending Grading</div>
+                            <div class="stats-value">24</div>
+                        </div>
+                        <div class="stats-icon">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-info">
+                            <span>AI Graded</span>
+                            <span>8/24</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 33%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stats-card animate-fade-in delay-2 glow">
+                    <div class="stats-header">
+                        <div>
+                            <div class="stats-title">Student Questions</div>
+                            <div class="stats-value">16</div>
+                        </div>
+                        <div class="stats-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-info">
+                            <span>AI Answered</span>
+                            <span>12/16</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stats-card animate-fade-in delay-3 glow">
+                    <div class="stats-header">
+                        <div>
+                            <div class="stats-title">Time Saved</div>
+                            <div class="stats-value">14.5h</div>
+                        </div>
+                        <div class="stats-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-info">
+                            <span>This week</span>
+                            <span>+3.2h</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 65%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Sections -->
+            <div class="main-content-layout">
+                <div>
+                    <!-- Classes Section -->
+                    <div class="classes-section glow">
+                        <div class="section-header">
+                            <div class="section-title">Your Classes</div>
+                            <button class="view-all-btn">View All</button>
+                        </div>
+                        
+                        <div class="classes-list">
+                            <div class="class-card glow">
+                                <div class="class-icon">
+                                    <i class="fas fa-atom"></i>
+                                </div>
+                                <div class="class-info">
+                                    <div class="class-name">Advanced Physics</div>
+                                    <div class="class-meta">42 students • 8 assignments pending</div>
+                                </div>
+                                <div class="class-code">
+                                    <div class="code">PHY402</div>
+                                    <div class="schedule">Mon/Wed 10AM</div>
+                                </div>
+                            </div>
+
+                            <div class="class-card glow">
+                                <div class="class-icon">
+                                    <i class="fas fa-flask"></i>
+                                </div>
+                                <div class="class-info">
+                                    <div class="class-name">Chemistry Lab</div>
+                                    <div class="class-meta">24 students • 3 assignments pending</div>
+                                </div>
+                                <div class="class-code">
+                                    <div class="code">CHE205</div>
+                                    <div class="schedule">Tue/Thu 2PM</div>
+                                </div>
+                            </div>
+
+                            <div class="class-card glow">
+                                <div class="class-icon">
+                                    <i class="fas fa-calculator"></i>
+                                </div>
+                                <div class="class-info">
+                                    <div class="class-name">Calculus II</div>
+                                    <div class="class-meta">36 students • 5 assignments pending</div>
+                                </div>
+                                <div class="class-code">
+                                    <div class="code">MTH202</div>
+                                    <div class="schedule">Mon/Fri 1PM</div>
+                                </div>
+                            </div>
+
+                            <div class="class-card glow">
+                                <div class="class-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <div class="class-info">
+                                    <div class="class-name">Cognitive Science</div>
+                                    <div class="class-meta">28 students • 2 assignments pending</div>
+                                </div>
+                                <div class="class-code">
+                                    <div class="code">PSY305</div>
+                                    <div class="schedule">Wed 9AM</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI Grading Assistant -->
+                    <div class="ai-section glow">
+                        <div class="section-header">
+                            <div class="section-title">AI Grading Assistant</div>
+                            <div>
+                                <button class="view-all-btn" style="margin-right: 8px;">New Task</button>
+                                <button class="view-all-btn" style="background-color: var(--accent);">Settings</button>
+                            </div>
+                        </div>
+
+                        <div class="ai-grid">
+                            <div class="ai-card glow">
+                                <div class="ai-card-header">
+                                    <div class="ai-icon">
+                                        <i class="fas fa-robot"></i>
+                                    </div>
+                                    <div class="ai-title">Auto-Grade Essays</div>
+                                </div>
+                                <div class="ai-desc">Let AI grade written assignments with rubric-based scoring and feedback.</div>
+                                <button class="ai-btn">Start Grading</button>
+                            </div>
+
+                            <div class="ai-card glow">
+                                <div class="ai-card-header">
+                                    <div class="ai-icon">
+                                        <i class="fas fa-language"></i>
+                                    </div>
+                                    <div class="ai-title">Multilingual Feedback</div>
+                                </div>
+                                <div class="ai-desc">Provide feedback in multiple languages for ESL students.</div>
+                                <button class="ai-btn">Configure</button>
+                            </div>
+
+                            <div class="ai-card glow">
+                                <div class="ai-card-header">
+                                    <div class="ai-icon">
+                                        <i class="fas fa-chart-pie"></i>
+                                    </div>
+                                    <div class="ai-title">Performance Analytics</div>
+                                </div>
+                                <div class="ai-desc">Get detailed analytics on class performance and common mistakes.</div>
+                                <button class="ai-btn">View Reports</button>
+                            </div>
+
+                            <div class="ai-card glow">
+                                <div class="ai-card-header">
+                                    <div class="ai-icon">
+                                        <i class="fas fa-magic"></i>
+                                    </div>
+                                    <div class="ai-title">Rubric Generator</div>
+                                </div>
+                                <div class="ai-desc">Create custom grading rubrics based on assignment requirements.</div>
+                                <button class="ai-btn">Generate</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Sidebar -->
+                <div class="right-section-container">
+                    <!-- Upcoming Deadlines -->
+                    <div class="deadlines-section glow">
+                        <div class="section-header">
+                            <div class="section-title">Upcoming Deadlines</div>
+                            <button class="view-all-btn">View All</button>
+                        </div>
+
+                        <div>
+                            <div class="deadline-card glow">
+                                <div class="deadline-header">
+                                    <div class="deadline-name">Quantum Mechanics Essay</div>
+                                    <div class="deadline-badge">Tomorrow</div>
+                                </div>
+                                <div class="deadline-meta">Advanced Physics • 12/42 submitted</div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 28%"></div>
+                                </div>
+                                <div class="progress-info">
+                                    <span>Due: May 15, 10AM</span>
+                                    <span>28% graded</span>
+                                </div>
+                            </div>
+
+                            <div class="deadline-card glow">
+                                <div class="deadline-header">
+                                    <div class="deadline-name">Lab Report #3</div>
+                                    <div class="deadline-badge">In 3 days</div>
+                                </div>
+                                <div class="deadline-meta">Chemistry Lab • 8/24 submitted</div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 75%"></div>
+                                </div>
+                                <div class="progress-info">
+                                    <span>Due: May 17, 5PM</span>
+                                    <span>75% graded</span>
+                                </div>
+                            </div>
+
+                            <div class="deadline-card glow">
+                                <div class="deadline-header">
+                                    <div class="deadline-name">Midterm Exams</div>
+                                    <div class="deadline-badge">Next week</div>
+                                </div>
+                                <div class="deadline-meta">Calculus II • 0/36 submitted</div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 0%"></div>
+                                </div>
+                                <div class="progress-info">
+                                    <span>Due: May 22, 9AM</span>
+                                    <span>Not started</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Activity -->
+                    <div class="activity-section glow">
+                        <div class="section-header">
+                            <div class="section-title">Recent Activity</div>
+                            <button class="view-all-btn">View All</button>
+                        </div>
+
+                        <div>
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <div class="activity-details">
+                                    <div class="activity-text"><b>AI Assistant</b> graded 8 Physics essays</div>
+                                    <div class="activity-time">2 hours ago</div>
+                                </div>
+                            </div>
+
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-comment-alt"></i>
+                                </div>
+                                <div class="activity-details">
+                                    <div class="activity-text"><b>Michael Chen</b> asked a question in Calculus II</div>
+                                    <div class="activity-time">5 hours ago</div>
+                                </div>
+                            </div>
+
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-upload"></i>
+                                </div>
+                                <div class="activity-details">
+                                    <div class="activity-text"><b>You</b> uploaded new materials for Chemistry Lab</div>
+                                    <div class="activity-time">Yesterday</div>
+                                </div>
+                            </div>
+
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-language"></i>
+                                </div>
+                                <div class="activity-details">
+                                    <div class="activity-text"><b>AI Assistant</b> translated feedback for 3 ESL students</div>
+                                    <div class="activity-time">Yesterday</div>
+                                </div>
+                            </div>
+
+                            <div class="activity-item">
+                                <div class="activity-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="activity-details">
+                                    <div class="activity-text"><b>System</b> generated new performance analytics</div>
+                                    <div class="activity-time">2 days ago</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.sidebar').classList.toggle('active');
+        });
+
+        // Glow effect for highlighted sections
+        const glowElements = document.querySelectorAll('.glow');
+        glowElements.forEach(el => {
+            el.addEventListener('mouseenter', function() {
+                this.style.boxShadow = '0 0 15px rgba(239, 45, 86, 0.6)';
+            });
+            el.addEventListener('mouseleave', function() {
+                this.style.boxShadow = 'none';
+            });
+        });
+
+        // Animate elements on scroll into view
+        const animateOnScroll = function() {
+            const animatedElements = document.querySelectorAll('.animate-fade-in');
+            animatedElements.forEach(el => {
+                const elementTop = el.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementTop < windowHeight - 100) {
+                    el.style.opacity = 1;
+                    el.style.transform = 'translateY(0)';
+                }
+            });
+        };
+
+        // Initial animation check
+        animateOnScroll();
+
+        // Add scroll event listener
+        window.addEventListener('scroll', animateOnScroll);
+
+        // Simulate data updates
+        setTimeout(() => {
+            // Update pending grading count
+            const pendingCard = document.querySelectorAll('.stats-card')[1];
+            const pendingValue = pendingCard.querySelector('.stats-value');
+            const pendingProgress = pendingCard.querySelector('.progress-fill');
+            
+            pendingValue.textContent = '16';
+            pendingProgress.style.width = '66%';
+            pendingCard.querySelector('.progress-info span:last-child').textContent = '10/16';
+
+            // Add pulse effect to important items
+            const deadlineBadges = document.querySelectorAll('.deadline-badge');
+            deadlineBadges[0].classList.add('pulse');
+            
+            function togglePulse() {
+                deadlineBadges[0].classList.toggle('pulse');
+                setTimeout(togglePulse, 1500);
+            }
+            
+            setTimeout(togglePulse, 1500);
+        }, 2000);
+    </script>
+</body>
+</html>
